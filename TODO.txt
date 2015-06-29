@@ -1,2 +1,3 @@
 * add phone number to results
 * tests should validate json
+* find if data is OGL and add statement to footer

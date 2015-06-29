@@ -1,6 +1,13 @@
 body {
     padding-top:60px;
 }
+
 .columns {
   margin-bottom:2em;
+}
+
+label {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
 }
