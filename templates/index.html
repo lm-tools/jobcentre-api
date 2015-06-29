@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+  <div class="small-10 small-centered columns">
+    <h1>Jobcentre API</h1>
+    <p>
+      This service acts as
+      a proxy for <a href="http://los.direct.gov.uk">los.direct.gov.uk</a>. It lets you look up the jobcentre responsible for a given postcode.
+    </p>
+    <hr/>
+  </div>
+  <div class="small-10 small-centered columns">
+    <h3>Documentation</h3>
+    <p>You can search by postcode:
+    <code>
+      /api?postcode=SW1A2LW
+    </code>
+    </p>
+    <p>
+      A successful response looks like this and returns a 200 status code:
+      <br/>
+      <code>
+        {
+          "address": "Chadwick Street, London, United Kingdom, SW1P 2ES", 
+          "name": "Westminster Jobcentre Plus", 
+          "opening-times": [], 
+          "postcode": "SW1P 2ES"
+        }
+      </code>
+    </p>
+  </div>
+  <div class="small-10 small-centered columns">
+    <h3>
+      Try the API
+    </h3>
+    <form action="/api" method="get" class="panel">
+      <label for="postcode">Postcode</label>
+      <input type="text" name="postcode" />
+      <input type="submit" class="button " value="Search"/>
+    </form>
+  </div>
+</div>
+{% endblock %}
