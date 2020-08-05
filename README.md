@@ -1,3 +1,7 @@
+# jobcentre-api - deprecated
+
+*This project is no longer maintained*
+
 This service acts as a proxy for [los.direct.gov.uk](http://los.direct.gov.uk). It lets you look up the jobcentre responsible for a given postcode.
 
 ##install
